@@ -1,0 +1,40 @@
+[core]
+  editor = vim
+  pager = "nkf -w | less -r"
+[marge]
+  tool = vimdiff
+[user]
+  name = Shin-ichi Ueda
+  email = lix@levolution.info
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[push]
+  default = tracking
+[pull]
+  rebase = true
+[branch]
+  autosetuprebase = always
+[merge]
+  ff = false
+[alias]
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+  b = branch -a
+  br = branch
+  ci = commit
+  co = checkout
+  d = diff
+  dc = diff --cached
+  f = fetch --prune
+  info = remote show origin
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph
+  s = status --short --branch
+  st = status
+  su = submodule update
+[log]
+  date = local
+[rerere]
+  enabled = true

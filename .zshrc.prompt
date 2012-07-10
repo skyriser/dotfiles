@@ -1,0 +1,60 @@
+#
+# .zshrc Prompt Settings
+#
+
+# Cute Prompt
+# thanks to http://qiita.com/items/c200680c26e509a4f41c
+# もしかして機能
+setopt correct
+# プロンプトが表示されるたびにプロンプト文字列を評価、置換する
+setopt prompt_subst
+# プロンプト指定
+MAIN_COLOR="%{${fg[green]}%}"
+WWW_MAIN_COLOR="%{${fg[yellow]}%}"
+ROOT_MAIN_COLOR="%{${fg[red]}%}"
+case "${USER}" in
+www*)
+  PROMPT="${WWW_MAIN_COLOR}%n@%m %{${fg[yellow]}%}%~%{${reset_color}%} %(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(*'-') <!(*;-;%)? <)%{${reset_color}%} "
+  ;;
+root*)
+  PROMPT="${ROOT_MAIN_COLOR}%n@%m %{${fg[yellow]}%}%~%{${reset_color}%} %(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(*'-') <!(*;-;%)? <)%{${reset_color}%} "
+  ;;
+*)
+  PROMPT="${MAIN_COLOR}%n@%m %{${fg[yellow]}%}%~%{${reset_color}%} %(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(*'-') <!(*;-;%)? <)%{${reset_color}%} "
+  ;;
+esac
+# プロンプト指定(コマンドの続き)
+PROMPT2='[%n]> '
+# もしかして時のプロンプト指定
+SPROMPT="%{$fg[red]%}%{$suggest%}(*'~'%)? < もしかして %B%r%b %{$fg[red]%}かな? [そう!(y), 違う!(n),a,e]:${reset_color} "
+
+
+
+# For VCS (RPROMPT)
+# thanks to http://d.hatena.ne.jp/mollifier/20100906/p1
+autoload -Uz add-zsh-hook
+autoload -Uz colors; colors
+autoload -Uz vcs_info
+
+zstyle ':vcs_info:*' enable git svn hg bzr
+zstyle ':vcs_info:*' formats '(%s)-[%b]'
+zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
+zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
+zstyle ':vcs_info:bzr:*' use-simple true
+
+autoload -Uz is-at-least
+if is-at-least 4.3.10; then
+  zstyle ':vcs_info:git:*' check-for-changes true
+  zstyle ':vcs_info:git:*' stagedstr "+"
+  zstyle ':vcs_info:git:*' unstagedstr "-"
+  zstyle ':vcs_info:git:*' formats '(%s)-[%b] %c%u'
+  zstyle ':vcs_info:git:*' actionformats '(%s)-[%b|%a] %c%u'
+fi
+
+function _update_vcs_info_msg() {
+  psvar=()
+  LANG=en_US.UTF-8 vcs_info
+  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+add-zsh-hook precmd _update_vcs_info_msg
+RPROMPT="%1(v|%F{green}%1v%f|)"

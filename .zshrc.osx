@@ -1,0 +1,26 @@
+#
+# .zshrc for OSX
+#
+
+# Use zsh 5.0 (by brew)
+alias zsh='/usr/local/bin/zsh'
+
+# Aliases
+alias ll='ls -ltr'
+
+# Environments
+# Add Homebrew Path to PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# RBENV
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
+
+# NVM
+. ~/.nvm/nvm.sh
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# NVM
+. ~/.nvm/nvm.sh

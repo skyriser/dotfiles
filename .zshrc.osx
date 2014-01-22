@@ -13,8 +13,7 @@ alias ll='ls -ltr'
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # RBENV
-export RBENV_ROOT=/usr/local/var/rbenv
-eval "$(rbenv init -)"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # NVM
 . ~/.nvm/nvm.sh

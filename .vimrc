@@ -44,6 +44,9 @@ NeoBundle 'pekepeke/titanium-vim.git'
 " PHP
 NeoBundle 'beyondwords/vim-twig.git'
 
+" Markdown
+NeoBundle 'tpope/vim-markdown'
+
 filetype plugin indent on     " Required!
 "
 " Brief help

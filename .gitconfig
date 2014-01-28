@@ -5,7 +5,7 @@
   tool = vimdiff
 [user]
   name = Shin-ichi Ueda
-  email = lix@levolution.info
+  email = skyriser@levolution.info
 [color]
   branch = auto
   diff = auto

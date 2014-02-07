@@ -25,21 +25,12 @@ NeoBundle 'tpope/vim-endwise.git'
 
 " Ruby
 NeoBundle 'ruby-matchit'
-NeoBundle 'taq/vim-rspec'
 
 " Comment
 NeoBundle 'tomtom/tcomment_vim'
-" NeoBundle 'taichouchou2/surround.vim'
-
-" Rails
-NeoBundle 'ujihisa/unite-rake'
-NeoBundle 'basyura/unite-rails'
 
 " CoffeeScript
 NeoBundle 'kchmck/vim-coffee-script'
-
-" Titanium Mobile
-NeoBundle 'pekepeke/titanium-vim.git'
 
 " PHP
 NeoBundle 'beyondwords/vim-twig.git'

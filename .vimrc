@@ -20,7 +20,7 @@ NeoBundle 'sudo.vim'
 " My Bundles here:
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree.git'
-NeoBundle 'Lokaltog/vim-powerline.git'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tpope/vim-endwise.git'
 
 " Ruby

@@ -5,3 +5,6 @@
 # Reload .zshrc
 alias reload="source ~/.zshrc"
 alias tmux="tmux -u"
+
+# For ruby development
+alias be='bundle exec'

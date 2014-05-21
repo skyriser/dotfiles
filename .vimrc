@@ -33,10 +33,13 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'kchmck/vim-coffee-script'
 
 " PHP
-NeoBundle 'beyondwords/vim-twig.git'
+NeoBundle 'beyondwords/vim-twig'
 
 " Markdown
 NeoBundle 'tpope/vim-markdown'
+
+" Dockerfile
+NeoBundle 'ekalinin/Dockerfile.vim'
 
 filetype plugin indent on     " Required!
 "

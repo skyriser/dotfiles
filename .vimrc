@@ -74,7 +74,7 @@ set nobackup
 
 " Theme
 set t_Co=256
-colorscheme ron
+colorscheme monokai
 
 " Encodings
 set enc=utf-8

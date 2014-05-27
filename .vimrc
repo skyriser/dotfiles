@@ -41,6 +41,9 @@ NeoBundle 'tpope/vim-markdown'
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
 
+" Colorscheme
+NeoBundle 'jpo/vim-railscasts-theme'
+
 filetype plugin indent on     " Required!
 "
 " Brief help
@@ -74,7 +77,7 @@ set nobackup
 
 " Theme
 set t_Co=256
-colorscheme monokai
+colorscheme railscasts
 
 " Encodings
 set enc=utf-8

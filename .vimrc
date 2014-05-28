@@ -36,7 +36,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'beyondwords/vim-twig'
 
 " Markdown
-NeoBundle 'tpope/vim-markdown'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
@@ -159,6 +161,9 @@ let g:tcommentMapLeader1 = '<C-_>'
 let g:tcommentMapLeader2 = '<Leader>'
 let g:tcommentMapLeaderOp1 = 'gc'
 let g:tcommentMapLeaderOp2 = 'gC'
+
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
 
 " Setting Local
 if filereadable(expand('~/.vimrc.local'))

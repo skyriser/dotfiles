@@ -35,6 +35,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " PHP
 NeoBundle 'beyondwords/vim-twig'
 
+" JSON
+NeoBundle 'elzr/vim-json'
+
 " Markdown
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'

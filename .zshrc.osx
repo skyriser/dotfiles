@@ -12,8 +12,9 @@ alias ll='ls -ltr'
 # Add Homebrew Path to PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# RBENV
+# RVM
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source ~/.rvm/scripts/rvm
 
 # NVM
 . ~/.nvm/nvm.sh

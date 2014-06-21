@@ -1,3 +1,5 @@
+set shell=bash
+
 set nocompatible               " Be iMproved
 filetype off                   " Required!
 

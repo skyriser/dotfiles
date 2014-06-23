@@ -156,6 +156,7 @@ hi DiffText   ctermfg=white ctermbg=darkgray
 nmap <silent> <F7> :NERDTreeToggle<CR>
 
 " Trailing Space
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 :nnoremap <silent> <F3> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " tcomment

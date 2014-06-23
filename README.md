@@ -52,3 +52,13 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 を起動して、再度起動すること。
 それでプラグインが全部使える状態になります。
+
+### Function キー割り当て
+
+|Key|Desc.|
+|----|----|
+|F3|ホワイトスペース削除|
+|F4|新しいタブ|
+|F5/F6|タブ移動|
+|F7|Nerdtree ON/OFF|
+|F11|ペーストモード ON/OFF|

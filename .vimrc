@@ -40,6 +40,9 @@ NeoBundle 'beyondwords/vim-twig'
 " JSON
 NeoBundle 'elzr/vim-json'
 
+" Zen
+NeoBundle 'mattn/emmet-vim'
+
 " Markdown
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'kannokanno/previm'

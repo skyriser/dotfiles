@@ -70,6 +70,9 @@ linux* | cygwin)
   ;;
 esac
 
+# NVM
+[ -f ~/dotfiles/.zshrc.nvm ] && source ~/dotfiles/.zshrc.nvm
+
 # Prompt
 [ -f ~/dotfiles/.zshrc.prompt ] && source ~/dotfiles/.zshrc.prompt
 

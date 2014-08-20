@@ -1,0 +1,8 @@
+# NVM をロードする
+if [[ -f ~/.nvm/nvm.sh ]]; then
+  source ~/.nvm/nvm.sh
+
+  # default alias のものを利用
+  nvm use default
+  export NODE_PATH=${NVM_PATH}_modules${NODE_PATH:+:}${NODE_PATH}
+fi

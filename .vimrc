@@ -7,6 +7,9 @@ if has('vim_starting')
  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
+" Pathogen
+execute pathogen#infect()
+
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
@@ -24,6 +27,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tpope/vim-endwise.git'
+NeoBundle 'terryma/vim-multiple-cursors'
 
 " Ruby
 NeoBundle 'ruby-matchit'
@@ -84,7 +88,8 @@ set nobackup
 
 " Theme
 set t_Co=256
-colorscheme ron
+set background=dark
+colorscheme solarized
 
 " Encodings
 set enc=utf-8

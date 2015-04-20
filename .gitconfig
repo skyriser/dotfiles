@@ -13,10 +13,6 @@
   status = auto
 [push]
   default = tracking
-[pull]
-  rebase = true
-[branch]
-  autosetuprebase = always
 [merge]
   ff = false
 [alias]

@@ -44,6 +44,9 @@ NeoBundle 'beyondwords/vim-twig'
 " JSON
 NeoBundle 'elzr/vim-json'
 
+" slim
+NeoBundle 'slim-template/vim-slim.git'
+
 " Zen
 NeoBundle 'mattn/emmet-vim'
 

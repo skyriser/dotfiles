@@ -1,0 +1,96 @@
+" シンタックス有効
+syntax enable
+
+" 折り返さない
+set nowrap
+
+" モードライン有効
+set modeline
+
+" 行番号表示
+set number
+
+" ソースコードの折りたたみ
+set foldmethod=marker
+
+" 全角記号を2文字表示
+set ambiwidth=double
+
+" ファイルタイプの自動検出
+filetype on
+filetype indent on
+filetype plugin on
+
+" ファイルタイプ設定
+augroup filetypedetect
+au! BufRead,BufNewFile *.lib setfiletype php
+au! BufRead,BufNewFile *.yml setfiletype yaml
+au BufRead,BufNewFile *.php setfiletype php
+au BufNewFile,BufRead *.less set filetype=less
+autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
+augroup end
+
+" バックアップファイルを作成しない
+set nobackup
+set directory=$HOME/.vimswap
+
+" カラーテーマ
+set t_Co=256
+set background=dark
+colorscheme solarized
+
+" エンコード設定
+set enc=utf-8
+set fileencodings=utf-8,euc-jp,shift-jis,japan
+
+" [F4][F5][F6] をタブショートカットキーに割り当て
+nmap <silent> <F4> :tabnew<CR>
+nmap <silent> <F5> :tabp<CR>
+nmap <silent> <F6> :tabn<CR>
+
+" [F11] でペーストモードをトグル
+set pastetoggle=<F11>
+
+" [F3] で不要なホワイトスペースを削除
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+:nnoremap <silent> <F3> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" [Esc]x3 でハイライトをオフ
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" {} のマッチ表示
+set showmatch
+
+" インデント設定
+set autoindent
+set nosmartindent
+set nocindent
+set indentexpr=""
+set ruler
+set backspace=2
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+
+" 全角スペースのハイライト有効
+highlight ZenkakuSpace cterm=underline ctermfg=lightgreen guibg=darkgray
+match ZenkakuSpace /　/
+
+" diff カラー設定
+hi DiffAdd    ctermfg=cyan ctermbg=black
+hi DiffChange ctermfg=white ctermbg=darkcyan
+hi DiffDelete ctermfg=red ctermbg=darkgray
+hi DiffText   ctermfg=white ctermbg=darkgray
+
+" `vim -b` でのバイナリ編集設定
+augroup BinaryXXD
+  autocmd!
+  autocmd BufReadPre  *.bin let &binary =1
+  autocmd BufReadPost * if &binary | silent %!xxd -g 1
+  autocmd BufReadPost * set ft=xxd | endif
+  autocmd BufWritePre * if &binary | %!xxd -r | endif
+  autocmd BufWritePost * if &binary | silent %!xxd -g 1
+  autocmd BufWritePost * set nomod | endif
+augroup END

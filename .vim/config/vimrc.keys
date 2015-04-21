@@ -1,0 +1,15 @@
+" [F4][F5][F6] をタブショートカットキーに割り当て
+nmap <silent> <F4> :tabnew<CR>
+nmap <silent> <F5> :tabp<CR>
+nmap <silent> <F6> :tabn<CR>
+
+" [F11] でペーストモードをトグル
+set pastetoggle=<F11>
+
+" [F3] で不要なホワイトスペースを削除
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+:nnoremap <silent> <F3> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" [Esc]x3 でハイライトをオフ
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>

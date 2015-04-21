@@ -1,7 +1,7 @@
 set shell=bash
 
-set nocompatible               " Be iMproved
-filetype off                   " Required!
+set nocompatible
+filetype off
 
 if has('vim_starting')
  set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -146,6 +146,10 @@ set expandtab
 
 " {} Match Shows
 set showmatch
+
+" 全角スペースのハイライト有効
+highlight ZenkakuSpace cterm=underline ctermfg=lightgreen guibg=darkgray
+match ZenkakuSpace /　/
 
 " File Type
 augroup filetypedetect

@@ -37,11 +37,21 @@ vim7.3 以上必須です。
 無かったらコンパイルして下さい。勿論 `--with-features=huge` で。
 
 使う前にスワップディレクトリの作成と、NeoBundleの準備が必要です。
+
 ```
 $ cd
 $ mkdir .vimswap
 $ mkdir -p ~/.vim/bundle
 $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+```
+
+次に `solarized`
+
+- http://ethanschoonover.com/solarized/vim-colors-solarized
+
+```
+$ cd ~/.vim/bundle
+$ git clone git://github.com/altercation/vim-colors-solarized.git
 ```
 
 初回起動時に

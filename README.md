@@ -4,13 +4,43 @@ Configファイル管理リポジトリです。
 基本的にホームディレクトリにクローンすれば大丈夫。
 
 ## Usage
+
+### 基本インストール
+
 ```
 $ cd ~
 $ git clone git://github.com/skyriser/dotfiles.git
 $ ./dotfiles/init.sh
 ```
 
+### vim 周りの設定
+
+使う前にスワップディレクトリの作成と、NeoBundleの準備が必要です。
+
+```
+$ cd
+$ mkdir .vimswap
+$ mkdir -p ~/.vim/bundle
+$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+```
+
+次に `solarized`
+
+```
+$ cd ~/.vim/bundle
+$ git clone git://github.com/altercation/vim-colors-solarized.git
+```
+
+初回起動時に
+
+```
+:NeoBundleInstall
+```
+
+を起動して、再度起動すること。
+
 ## tmux
+
 GNU screenライクなキー配置にしてます。
 メタキーは `Ctrl` + `a` です。
 
@@ -35,33 +65,6 @@ rbenv ではなく rvm を採用しています。
 
 vim7.3 以上必須です。
 無かったらコンパイルして下さい。勿論 `--with-features=huge` で。
-
-使う前にスワップディレクトリの作成と、NeoBundleの準備が必要です。
-
-```
-$ cd
-$ mkdir .vimswap
-$ mkdir -p ~/.vim/bundle
-$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-```
-
-次に `solarized`
-
-- http://ethanschoonover.com/solarized/vim-colors-solarized
-
-```
-$ cd ~/.vim/bundle
-$ git clone git://github.com/altercation/vim-colors-solarized.git
-```
-
-初回起動時に
-
-```
-:NeoBundleInstall
-```
-
-を起動して、再度起動すること。
-それでプラグインが全部使える状態になります。
 
 ### Function キー割り当て
 

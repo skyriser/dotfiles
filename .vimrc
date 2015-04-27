@@ -1,13 +1,13 @@
 set shell=bash
 
 " Bundle plugins
-source ~/.vim/config/vimrc.bundles
+source ~/.vim/config/bundles
 
 " Basic settings
-source ~/.vim/config/vimrc.base
+source ~/.vim/config/base
 
 " Key bind settings
-source ~/.vim/config/vimrc.keys
+source ~/.vim/config/keys
 
 " Local settings (option)
 if filereadable(expand('~/.vimrc.local'))

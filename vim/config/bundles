@@ -47,9 +47,9 @@ NeoBundle 'ekalinin/Dockerfile.vim'
 
 call neobundle#end()
 
-filetype plugin indent on
-
 NeoBundleCheck
+
+filetype plugin indent on
 
 " Pathogen
 execute pathogen#infect()

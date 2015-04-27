@@ -1,25 +1,18 @@
-set nocompatible
 filetype off
 
+" Neobundle setup
 if has('vim_starting')
- set runtimepath+=~/.vim/bundle/neobundle.vim/
+  if &compatible
+    set nocompatible
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-" Pathogen
-execute pathogen#infect()
-
 call neobundle#begin(expand('~/.vim/bundle/'))
+
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
-" Let NeoBundle manage NeoBundle
-NeoBundle 'Shougo/neobundle.vim'
-
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
-
-" My Bundles here:
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'itchyny/lightline.vim'
@@ -52,15 +45,14 @@ NeoBundle 'tyru/open-browser.vim'
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
 
+call neobundle#end()
+
 filetype plugin indent on
 
-" Installation check.
-if neobundle#exists_not_installed_bundles()
- echomsg 'Not installed bundles : ' .
-       \ string(neobundle#get_not_installed_bundle_names())
- echomsg 'Please execute ":NeoBundleInstall" command.'
- "finish
-endif
+NeoBundleCheck
+
+" Pathogen
+execute pathogen#infect()
 
 " NERDTree
 nmap <silent> <F7> :NERDTreeToggle<CR>

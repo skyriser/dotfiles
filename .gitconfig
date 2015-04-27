@@ -34,3 +34,5 @@
   date = local
 [rerere]
   enabled = true
+[pull]
+	rebase = true

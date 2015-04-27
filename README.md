@@ -24,13 +24,6 @@ $ mkdir -p ~/.vim/bundle
 $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ```
 
-次に `solarized`
-
-```
-$ cd ~/.vim/bundle
-$ git clone git://github.com/altercation/vim-colors-solarized.git
-```
-
 初回起動時に
 
 ```

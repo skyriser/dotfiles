@@ -14,10 +14,15 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
+
+" NERDTree
 NeoBundle 'scrooloose/nerdtree.git'
-NeoBundle 'itchyny/lightline.vim'
+
+" 自動補完 (end等の補完)
 NeoBundle 'tpope/vim-endwise.git'
-NeoBundle 'terryma/vim-multiple-cursors'
+
+" Lightline (Powerline軽量版)
+NeoBundle 'itchyny/lightline.vim'
 
 " Ruby
 NeoBundle 'ruby-matchit'
@@ -44,6 +49,9 @@ NeoBundle 'tyru/open-browser.vim'
 
 " Dockerfile
 NeoBundle 'ekalinin/Dockerfile.vim'
+
+" Colorschemes
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 

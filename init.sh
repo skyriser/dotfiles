@@ -11,3 +11,4 @@ for dotfile in .?*; do
       ;;
   esac
 done
+ln -Fis "$PWD/vim" "$HOME/.vim"

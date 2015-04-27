@@ -58,23 +58,23 @@ bindkey '^S' history-incremental-pattern-search-forward
 #
 
 # Alias
-[ -f ~/dotfiles/.zshrc.alias ] && source ~/dotfiles/.zshrc.alias
+source ~/dotfiles/zsh/alias
 
 # By OS type
 case "${OSTYPE}" in
 darwin*)
-  [ -f ~/dotfiles/.zshrc.osx ] && source ~/dotfiles/.zshrc.osx
+  source ~/dotfiles/zsh/osx
   ;;
 linux* | cygwin)
-  [ -f ~/dotfiles/.zshrc.linux ] && source ~/dotfiles/.zshrc.linux
+  source ~/dotfiles/zsh/linux
   ;;
 esac
 
 # NVM
-[ -f ~/dotfiles/.zshrc.nvm ] && source ~/dotfiles/.zshrc.nvm
+source ~/dotfiles/zsh/nvm
 
 # Prompt
-[ -f ~/dotfiles/.zshrc.prompt ] && source ~/dotfiles/.zshrc.prompt
+source ~/dotfiles/zsh/prompt
 
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

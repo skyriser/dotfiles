@@ -6,5 +6,8 @@
 alias reload="source ~/.zshrc"
 alias tmux="tmux -u"
 
-# For ruby development
+# Bundler
 alias be='bundle exec'
+
+# Docker
+alias dcp='docker-compose'

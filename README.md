@@ -10,19 +10,11 @@ Configファイル管理リポジトリです。
 ```
 $ cd ~
 $ git clone git://github.com/skyriser/dotfiles.git
+$ git submodule update
 $ ./dotfiles/init.sh
 ```
 
 ### vim 周りの設定
-
-使う前にスワップディレクトリの作成と、NeoBundleの準備が必要です。
-
-```
-$ cd
-$ mkdir .vimswap
-$ mkdir -p ~/.vim/bundle
-$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-```
 
 初回起動時に
 
@@ -30,7 +22,7 @@ $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 :NeoBundleInstall
 ```
 
-を起動して、再度起動すること。
+を起動。
 
 ## tmux
 

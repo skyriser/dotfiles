@@ -32,7 +32,6 @@ augroup end
 
 " バックアップファイルを作成しない
 set nobackup
-set directory=$HOME/.vimswap
 
 " カラーテーマ
 set t_Co=256

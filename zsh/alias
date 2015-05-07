@@ -11,3 +11,4 @@ alias be='bundle exec'
 
 # Docker
 alias dcp='docker-compose'
+alias dcr='docker-compose run'

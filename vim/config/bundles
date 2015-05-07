@@ -15,11 +15,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
 
+" ダブルクォートやカッコの自動補完
+NeoBundle 'kana/vim-smartinput'
+NeoBundle 'cohama/vim-smartinput-endwise'
+
 " NERDTree
 NeoBundle 'scrooloose/nerdtree.git'
-
-" 自動補完 (end等の補完)
-NeoBundle 'tpope/vim-endwise.git'
 
 " Lightline (Powerline軽量版)
 NeoBundle 'itchyny/lightline.vim'
@@ -67,3 +68,6 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
+
+" smartinput
+call smartinput_endwise#define_default_rules()

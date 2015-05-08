@@ -1,4 +1,5 @@
 [core]
+  excludesfile = ~/.gitignore
   editor = vim
   pager = "nkf -w | less -r"
 [marge]

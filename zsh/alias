@@ -10,5 +10,4 @@ alias tmux="tmux -u"
 alias be='bundle exec'
 
 # Docker
-alias dcp='docker-compose'
-alias dcr='docker-compose run'
+alias fig='docker-compose'

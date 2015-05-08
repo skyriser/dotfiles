@@ -22,8 +22,8 @@ NeoBundle 'cohama/vim-smartinput-endwise'
 " NERDTree
 NeoBundle 'scrooloose/nerdtree.git'
 
-" Lightline (Powerline軽量版)
-NeoBundle 'itchyny/lightline.vim'
+" Airline
+NeoBundle 'bling/vim-airline'
 
 " Ruby
 NeoBundle 'ruby-matchit'

@@ -31,6 +31,7 @@ autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 augroup end
 
 " バックアップファイルを作成しない
+set noswapfile
 set nobackup
 
 " カラーテーマ

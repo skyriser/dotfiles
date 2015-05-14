@@ -15,10 +15,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/unite.vim'
 
-" ダブルクォートやカッコの自動補完
-NeoBundle 'kana/vim-smartinput'
-NeoBundle 'cohama/vim-smartinput-endwise'
-
 " NERDTree
 NeoBundle 'scrooloose/nerdtree.git'
 
@@ -68,6 +64,3 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
-
-" smartinput
-call smartinput_endwise#define_default_rules()

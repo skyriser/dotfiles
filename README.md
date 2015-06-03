@@ -10,6 +10,7 @@ Configファイル管理リポジトリです。
 ```
 $ cd ~
 $ git clone git://github.com/skyriser/dotfiles.git
+$ git submodule init
 $ git submodule update
 $ ./dotfiles/init.sh
 ```

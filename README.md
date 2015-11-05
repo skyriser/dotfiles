@@ -10,6 +10,7 @@ Configファイル管理リポジトリです。
 ```
 $ cd ~
 $ git clone git://github.com/skyriser/dotfiles.git
+$ git submodule init
 $ git submodule update
 $ ./dotfiles/init.sh
 ```
@@ -19,10 +20,16 @@ $ ./dotfiles/init.sh
 初回起動時に
 
 ```
-:NeoBundleInstall
+$ cd dotfiles/vim/bundle/vimproc
+$ make
 ```
 
-を起動。
+vimproc の make が必要かも
+その後
+
+```
+:NeoBundleInstall
+```
 
 ## tmux
 

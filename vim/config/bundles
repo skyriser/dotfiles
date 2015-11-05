@@ -30,8 +30,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 " PHP
 NeoBundle 'beyondwords/vim-twig'
 
-" JSON
+" JS
 NeoBundle 'elzr/vim-json'
+NeoBundle 'nono/vim-handlebars'
 
 " slim
 NeoBundle 'slim-template/vim-slim.git'

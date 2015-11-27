@@ -36,4 +36,4 @@
 [rerere]
   enabled = true
 [pull]
-	rebase = true
+  rebase = true

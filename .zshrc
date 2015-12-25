@@ -57,6 +57,9 @@ bindkey '^S' history-incremental-pattern-search-forward
 # Include external config files
 #
 
+# Env
+source ~/dotfiles/zsh/env
+
 # Alias
 source ~/dotfiles/zsh/alias
 

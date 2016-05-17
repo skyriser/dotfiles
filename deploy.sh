@@ -7,8 +7,8 @@ for dotfile in .?*; do
     .git)
       continue;;
     *)
-      ln -Fis "$PWD/$dotfile" $HOME
+      ln -sfnv "$PWD/$dotfile" $HOME
       ;;
   esac
 done
-ln -Fis "$PWD/vim" "$HOME/.vim"
+ln -sfnv "$PWD/vim" "$HOME/.vim"

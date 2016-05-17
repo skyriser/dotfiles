@@ -68,7 +68,7 @@ case "${OSTYPE}" in
 darwin*)
   source ~/dotfiles/zsh/osx
   ;;
-linux* | cygwin)
+linux*)
   source ~/dotfiles/zsh/linux
   ;;
 esac

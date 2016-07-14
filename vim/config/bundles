@@ -51,6 +51,10 @@ NeoBundle 'ekalinin/Dockerfile.vim'
 " Colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
 
+" Transparent terminal
+NeoBundle 'miyakogi/seiya.vim'
+let g:seiya_auto_enable=1
+
 call neobundle#end()
 
 NeoBundleCheck

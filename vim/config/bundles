@@ -34,6 +34,10 @@ NeoBundle 'beyondwords/vim-twig'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'nono/vim-handlebars'
 
+" Babel
+NeoBundle 'jbgutierrez/vim-babel'
+NeoBundle 'mattn/webapi-vim'
+
 " slim
 NeoBundle 'slim-template/vim-slim.git'
 

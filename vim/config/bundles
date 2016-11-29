@@ -33,6 +33,8 @@ NeoBundle 'beyondwords/vim-twig'
 " JS
 NeoBundle 'elzr/vim-json'
 NeoBundle 'nono/vim-handlebars'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'mxw/vim-jsx'
 
 " Babel
 NeoBundle 'jbgutierrez/vim-babel'

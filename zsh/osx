@@ -12,15 +12,12 @@ alias ll='ls -ltr'
 # Add Homebrew Path to PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-# RVM
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH
+~/.rbenv/bin/rbenv init
 
 # NVM
 . ~/.nvm/nvm.sh
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# NVM
-. ~/.nvm/nvm.sh

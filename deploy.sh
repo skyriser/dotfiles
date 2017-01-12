@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Install rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+~/.rbenv/bin/rbenv init
+
 # Install dotfiles
 cd $(dirname $0)
 for dotfile in .?*; do

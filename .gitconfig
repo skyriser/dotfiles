@@ -31,6 +31,7 @@
   s = status --short --branch
   st = status
   su = submodule update
+  uchidashi = push
 [log]
   date = local
 [rerere]

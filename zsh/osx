@@ -11,6 +11,9 @@ alias ll='ls -ltr'
 # Environments
 # Add Homebrew Path to PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+<<<<<<< HEAD
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+=======
+>>>>>>> Switch to anyenv

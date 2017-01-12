@@ -1,9 +1,7 @@
 #!/bin/sh
 
-# Install rbenv
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-~/.rbenv/bin/rbenv init
+# Install anyenv
+git clone https://github.com/riywo/anyenv ~/.anyenv
 
 # Install dotfiles
 cd $(dirname $0)

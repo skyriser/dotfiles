@@ -5,7 +5,3 @@
 # Aliases
 alias ls='ls --color=auto'
 alias ll='ls -alF'
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"

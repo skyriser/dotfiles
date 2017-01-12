@@ -73,11 +73,11 @@ linux*)
   ;;
 esac
 
-# NVM
-source ~/dotfiles/zsh/nvm
-
 # Prompt
 source ~/dotfiles/zsh/prompt
+
+# Anyenv
+source ~/dotfiles/zsh/anyenv
 
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

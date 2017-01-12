@@ -79,8 +79,5 @@ source ~/dotfiles/zsh/nvm
 # Prompt
 source ~/dotfiles/zsh/prompt
 
-# Enhancd
-source ~/dotfiles/enhancd/enhancd.sh
-
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

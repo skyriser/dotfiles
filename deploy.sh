@@ -2,6 +2,8 @@
 
 # Install anyenv
 git clone https://github.com/riywo/anyenv ~/.anyenv
+mkdir -p ~/.anyenv/plugins
+git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
 
 # Install dotfiles
 cd $(dirname $0)

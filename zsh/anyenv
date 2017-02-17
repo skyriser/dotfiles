@@ -3,3 +3,6 @@
 #
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init - zsh)"
+
+# yarn (Node.js npm alt)
+export PATH="$HOME/.yarn/bin:$PATH"

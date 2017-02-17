@@ -35,6 +35,7 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'posva/vim-vue'
 
 " Babel
 NeoBundle 'jbgutierrez/vim-babel'

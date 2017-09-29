@@ -4,3 +4,6 @@
 [submodule "enhancd"]
 	path = enhancd
 	url = https://github.com/b4b4r07/enhancd
+[submodule "vim/dein"]
+	path = vim/dein
+	url = https://github.com/Shougo/dein.vim.git

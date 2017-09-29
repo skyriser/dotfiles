@@ -1,75 +1,68 @@
 filetype off
 
-" Neobundle setup
-if has('vim_starting')
-  if &compatible
-    set nocompatible
-  endif
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+" Dein
+if &compatible
+  set nocompatible
 endif
+set runtimepath+=~/.vim/dein
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+call dein#begin(expand('~/.vim/dein'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
+call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/vimproc.vim', { 'build': 'make' })
 
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'Shougo/unite.vim'
+call dein#add('Shougo/unite.vim', { 'depends': 'neomru.vim' })
 
-" NERDTree
-NeoBundle 'scrooloose/nerdtree.git'
+" Tree
+call dein#add('scrooloose/nerdtree.git')
 
-" Airline
-NeoBundle 'bling/vim-airline'
+" Powerline
+call dein#add('bling/vim-airline')
 
 " Ruby
-NeoBundle 'ruby-matchit'
+call dein#add('vim-scripts/ruby-matchit')
 
 " CoffeeScript
-NeoBundle 'kchmck/vim-coffee-script'
+call dein#add('kchmck/vim-coffee-script')
 
 " PHP
-NeoBundle 'beyondwords/vim-twig'
+call dein#add('beyondwords/vim-twig')
 
 " JS
-NeoBundle 'elzr/vim-json'
-NeoBundle 'nono/vim-handlebars'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'mxw/vim-jsx'
-NeoBundle 'posva/vim-vue'
+call dein#add('elzr/vim-json')
+call dein#add('nono/vim-handlebars')
+call dein#add('pangloss/vim-javascript')
+call dein#add('mxw/vim-jsx')
+call dein#add('posva/vim-vue')
 
 " Babel
-NeoBundle 'jbgutierrez/vim-babel'
-NeoBundle 'mattn/webapi-vim'
+call dein#add('jbgutierrez/vim-babel')
+call dein#add('mattn/webapi-vim')
 
 " slim
-NeoBundle 'slim-template/vim-slim.git'
+call dein#add('slim-template/vim-slim.git')
 
-" Zen
-NeoBundle 'mattn/emmet-vim'
+" Emmet
+call dein#add('mattn/emmet-vim')
 
 " Markdown
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
+call dein#add('plasticboy/vim-markdown')
+call dein#add('kannokanno/previm')
+call dein#add('tyru/open-browser.vim')
 
 " Dockerfile
-NeoBundle 'ekalinin/Dockerfile.vim'
+call dein#add('ekalinin/Dockerfile.vim')
 
 " CSS
-NeoBundle 'wavded/vim-stylus'
+call dein#add('wavded/vim-stylus')
 
 " Colorschemes
-NeoBundle 'altercation/vim-colors-solarized'
+call dein#add('altercation/vim-colors-solarized')
 
-" Transparent terminal
-NeoBundle 'miyakogi/seiya.vim'
-let g:seiya_auto_enable=1
-
-call neobundle#end()
-
-NeoBundleCheck
+call dein#end()
 
 filetype plugin indent on
+syntax enable
 
 " Pathogen
 execute pathogen#infect()

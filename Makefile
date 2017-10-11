@@ -13,7 +13,6 @@ update:
 
 deploy:
 	@/bin/sh deploy.sh
-	cd vim/bundle/vimproc && make
 
 install: update deploy
 	@exec $$SHELL

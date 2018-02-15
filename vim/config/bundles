@@ -17,7 +17,8 @@ call dein#add('Shougo/unite.vim', { 'depends': 'neomru.vim' })
 call dein#add('scrooloose/nerdtree.git')
 
 " Powerline
-call dein#add('bling/vim-airline')
+" call dein#add('bling/vim-airline')
+call dein#add('itchyny/lightline.vim')
 
 " Ruby
 call dein#add('vim-scripts/ruby-matchit')
@@ -72,3 +73,12 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 
 " vim-markdown
 let g:vim_markdown_folding_disabled=1
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+" Clean plugins
+call map(dein#check_clean(), "delete(v:val, 'rf')")
+call dein#recache_runtimepath()

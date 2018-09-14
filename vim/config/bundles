@@ -13,6 +13,18 @@ call dein#add('Shougo/vimproc.vim', { 'build': 'make' })
 
 call dein#add('Shougo/unite.vim', { 'depends': 'neomru.vim' })
 
+" deoplete
+call dein#add('Shougo/deoplete.nvim')
+if !has('nvim')
+  call dein#add('roxma/nvim-yarp')
+  call dein#add('roxma/vim-hug-neovim-rpc')
+endif
+let g:deoplete#enable_at_startup = 1
+
+" deoplete (Ruby)
+call dein#add('Shougo/deoplete-rct')
+call dein#add('fishbullet/deoplete-ruby')
+
 " Tree
 call dein#add('scrooloose/nerdtree.git')
 
@@ -67,9 +79,6 @@ call dein#end()
 
 filetype plugin indent on
 syntax enable
-
-" Pathogen
-execute pathogen#infect()
 
 " NERDTree
 nmap <silent> <F7> :NERDTreeToggle<CR>

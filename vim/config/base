@@ -1,6 +1,9 @@
 " シンタックス有効
 syntax enable
 
+" バッファ利用
+set hidden
+
 " 折り返さない
 set nowrap
 

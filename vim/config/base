@@ -16,9 +16,6 @@ set number
 " ソースコードの折りたたみ
 set foldmethod=marker
 
-" 全角記号を2文字表示
-set ambiwidth=double
-
 " ファイルタイプの自動検出
 filetype on
 filetype indent on

@@ -10,20 +10,7 @@ call dein#begin(expand('~/.vim/dein'))
 
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', { 'build': 'make' })
-
 call dein#add('Shougo/denite.nvim')
-
-" deoplete
-call dein#add('Shougo/deoplete.nvim')
-if !has('nvim')
-  call dein#add('roxma/nvim-yarp')
-  call dein#add('roxma/vim-hug-neovim-rpc')
-endif
-let g:deoplete#enable_at_startup = 1
-
-" deoplete (Ruby)
-call dein#add('Shougo/deoplete-rct')
-call dein#add('fishbullet/deoplete-ruby')
 
 " Tree
 call dein#add('scrooloose/nerdtree.git')
@@ -33,11 +20,9 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
 let g:airline_theme = 'deus'
-let g:airline#extensions#tabline#enabled = 0
 
 " unicode symbols
 let g:airline_left_sep = '»'

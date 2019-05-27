@@ -3,8 +3,8 @@ nmap <silent> <F4> :tabnew<CR>
 nmap <silent> <F5> :tabp<CR>
 nmap <silent> <F6> :tabn<CR>
 
-" [F11] でペーストモードをトグル
-set pastetoggle=<F11>
+" [F2] でペーストモードをトグル
+set pastetoggle=<F2>
 
 " [F3] で不要なホワイトスペースを削除
 :autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red

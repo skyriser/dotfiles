@@ -6,68 +6,71 @@ if &compatible
 endif
 set runtimepath+=~/.vim/dein
 
-call dein#begin(expand('~/.vim/dein'))
+if dein#load_state('~/.vim/dein')
+  call dein#begin(expand('~/.vim/dein'))
 
-call dein#add('Shougo/dein.vim')
-call dein#add('Shougo/vimproc.vim', { 'build': 'make' })
-call dein#add('Shougo/denite.nvim')
+  call dein#add('Shougo/dein.vim')
+  call dein#add('Shougo/vimproc.vim', { 'build': 'make' })
+  call dein#add('Shougo/denite.nvim')
 
-" Tree
-call dein#add('scrooloose/nerdtree.git')
+  " Tree
+  call dein#add('scrooloose/nerdtree.git')
 
-" Powerline
-call dein#add('vim-airline/vim-airline')
-call dein#add('vim-airline/vim-airline-themes')
+  " Powerline
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
 
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#whitespace#mixed_indent_algo = 1
-let g:airline_theme = 'deus'
+  set laststatus=2
+  let g:airline#extensions#tabline#enabled = 0
+  let g:airline#extensions#whitespace#mixed_indent_algo = 1
+  let g:airline_theme = 'deus'
 
-" Ruby
-call dein#add('vim-scripts/ruby-matchit')
+  " Ruby
+  call dein#add('vim-scripts/ruby-matchit')
 
-" CoffeeScript
-call dein#add('kchmck/vim-coffee-script')
+  " CoffeeScript
+  call dein#add('kchmck/vim-coffee-script')
 
-" PHP
-call dein#add('beyondwords/vim-twig')
+  " PHP
+  call dein#add('beyondwords/vim-twig')
 
-" JS
-call dein#add('elzr/vim-json')
-call dein#add('nono/vim-handlebars')
-call dein#add('pangloss/vim-javascript')
-call dein#add('mxw/vim-jsx')
-call dein#add('posva/vim-vue')
+  " JS
+  call dein#add('elzr/vim-json')
+  call dein#add('nono/vim-handlebars')
+  call dein#add('pangloss/vim-javascript')
+  call dein#add('mxw/vim-jsx')
+  call dein#add('posva/vim-vue')
 
-" Babel
-call dein#add('jbgutierrez/vim-babel')
-call dein#add('mattn/webapi-vim')
+  " Babel
+  call dein#add('jbgutierrez/vim-babel')
+  call dein#add('mattn/webapi-vim')
 
-" slim
-call dein#add('slim-template/vim-slim.git')
+  " slim
+  call dein#add('slim-template/vim-slim.git')
 
-" Emmet
-call dein#add('mattn/emmet-vim')
+  " Emmet
+  call dein#add('mattn/emmet-vim')
 
-" Markdown
-call dein#add('plasticboy/vim-markdown')
-call dein#add('kannokanno/previm')
-call dein#add('tyru/open-browser.vim')
+  " Markdown
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('kannokanno/previm')
+  call dein#add('tyru/open-browser.vim')
 
-" Arduino
-call dein#add('sudar/vim-arduino-syntax')
+  " Arduino
+  call dein#add('sudar/vim-arduino-syntax')
 
-" Dockerfile
-call dein#add('ekalinin/Dockerfile.vim')
+  " Dockerfile
+  call dein#add('ekalinin/Dockerfile.vim')
 
-" CSS
-call dein#add('wavded/vim-stylus')
+  " CSS
+  call dein#add('wavded/vim-stylus')
 
-" Colorschemes
-call dein#add('altercation/vim-colors-solarized')
+  " Colorschemes
+  call dein#add('altercation/vim-colors-solarized')
 
-call dein#end()
+  call dein#end()
+  call dein#save_state()
+endif
 
 filetype plugin indent on
 syntax enable

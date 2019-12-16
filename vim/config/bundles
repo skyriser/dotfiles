@@ -68,8 +68,9 @@ if dein#load_state('~/.vim/dein')
   " Colorschemes
   call dein#add('altercation/vim-colors-solarized')
 
+  " Rust
+  call dein#add('rust-lang/rust.vim')
   call dein#end()
-  call dein#save_state()
 endif
 
 filetype plugin indent on

@@ -37,7 +37,7 @@ set nobackup
 " カラーテーマ
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme iceberg
 
 " エンコード設定
 set enc=utf-8

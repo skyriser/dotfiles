@@ -67,6 +67,7 @@ if dein#load_state('~/.vim/dein')
 
   " Colorschemes
   call dein#add('altercation/vim-colors-solarized')
+  call dein#add('cocopon/iceberg.vim')
 
   " Rust
   call dein#add('rust-lang/rust.vim')

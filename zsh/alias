@@ -11,4 +11,4 @@ alias mux="tmuxinator"
 alias be='bundle exec'
 
 # Docker
-alias fig='docker-compose'
+alias fig='docker compose'

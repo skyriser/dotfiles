@@ -1,0 +1,75 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# TOML syntax
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# NERDTree
+[[plugins]]
+repo = 'preservim/nerdtree'
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+[[plugins]]
+repo = 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+# Powerline
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+  set laststatus=2
+  let g:airline#extensions#tabline#enabled = 0
+  let g:airline#extensions#whitespace#mixed_indent_algo = 1
+  let g:airline_theme = 'deus'
+'''
+
+# Ruby
+[[plugins]]
+repo = 'vim-scripts/ruby-matchit'
+[[plugins]]
+repo = 'slim-template/vim-slim.git'
+
+# JS
+[[plugins]]
+repo = 'elzr/vim-json'
+[[plugins]]
+repo = 'nono/vim-handlebars'
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+[[plugins]]
+repo = 'mxw/vim-jsx'
+[[plugins]]
+repo = 'posva/vim-vue'
+
+# Babel
+[[plugins]]
+repo = 'jbgutierrez/vim-babel'
+
+# Emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+# Markdown
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+[[plugins]]
+repo = 'kannokanno/previm'
+
+# Docker
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+# Stylus
+[[plugins]]
+repo = 'wavded/vim-stylus'
+
+# Color Schemes
+[[plugins]]
+repo = 'flazz/vim-colorschemes.git'
+
+# Rust
+[[plugins]]
+repo = 'rust-lang/rust.vim'

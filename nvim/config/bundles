@@ -1,0 +1,29 @@
+filetype off
+
+" Dein
+if &compatible
+  set nocompatible
+endif
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+
+if dein#load_state('~/.cache/dein')
+  call dein#begin(expand('~/.cache/dein'))
+  call dein#load_toml('~/.dotfiles/nvim/config/dein.toml', {'lazy': 0})
+  call dein#load_toml('~/.dotfiles/nvim/config/dein_lazy.toml', {'lazy': 1})
+  call dein#end()
+  call dein#save_state()
+endif
+
+filetype plugin indent on
+syntax enable
+
+" NERDTree
+nmap <silent> <F7> :NERDTreeToggle<CR>
+
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }

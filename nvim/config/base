@@ -37,7 +37,7 @@ set nobackup
 " カラーテーマ
 set t_Co=256
 set background=dark
-colorscheme iceberg
+colorscheme sonokai
 
 " エンコード設定
 set enc=utf-8
@@ -67,6 +67,9 @@ hi DiffAdd    ctermfg=cyan ctermbg=black
 hi DiffChange ctermfg=white ctermbg=darkcyan
 hi DiffDelete ctermfg=red ctermbg=darkgray
 hi DiffText   ctermfg=white ctermbg=darkgray
+
+" airline
+let g:airline_powerline_fonts = 1
 
 " `vim -b` でのバイナリ編集設定
 augroup BinaryXXD

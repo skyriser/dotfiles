@@ -3,3 +3,4 @@ vim/.netrwhist
 vim/bundle
 *.swp
 .vscode
+docker-compose.override.yml

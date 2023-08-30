@@ -81,3 +81,6 @@ source ~/dotfiles/zsh/anyenv
 
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# Starship
+eval "$(starship init zsh)"

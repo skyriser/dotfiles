@@ -12,3 +12,11 @@ alias be='bundle exec'
 
 # Docker
 alias fig='docker compose'
+
+# vim
+alias vi='nvim'
+alias vim='nvim'
+
+# exa
+alias ls='exa'
+alias ll='exa -l'

@@ -1,0 +1,4 @@
+format = '$all$directory🐶💭$character'
+
+[aws]
+disabled = true

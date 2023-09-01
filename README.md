@@ -33,9 +33,9 @@ call dein#install()
 ### Softwares
 
 - [Starship](https://starship.rs/)
+- [asdf](https://asdf-vm.com/)
 - [exa](https://github.com/ogham/exa)
   - `ls`
-- [anyenv](https://github.com/anyenv/anyenv)
 - [the_platinum_searcher](https://github.com/monochromegane/the_platinum_searcher)
   - `pt`
 

@@ -73,11 +73,11 @@ esac
 # Prompt
 source ~/dotfiles/zsh/prompt
 
-# Anyenv
-source ~/dotfiles/zsh/anyenv
+# asdf
+source ~/dotfiles/zsh/asdf
+
+# Starship
+source ~/dotfiles/zsh/starship
 
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
-# Starship
-eval "$(starship init zsh)"

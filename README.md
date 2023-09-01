@@ -16,16 +16,26 @@ chsh -s `which zsh`
 
 ```
 $ git clone git://github.com/skyriser/dotfiles.git
+$ git submodule init
 $ cd dotfiles
 $ make
 ```
 
-### nvim plugins
+### NVim plugins
 
 Run first time only
 
 ```
 call dein#install()
+```
+
+### Copilot
+
+- [copilot.vim](https://github.com/github/copilot.vim)
+
+```
+# on vim
+:Copilot setup
 ```
 
 ## Other

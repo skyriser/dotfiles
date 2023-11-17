@@ -5,9 +5,6 @@
 # Use zsh 5.0 (by brew)
 alias zsh='/usr/local/bin/zsh'
 
-# Aliases
-alias ll='ls -ltr'
-
 # Environments
 # Add Homebrew Path to PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH

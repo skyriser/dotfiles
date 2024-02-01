@@ -1,7 +1,7 @@
 set shell=bash
 
-" Bundle plugins
-source ~/dotfiles/nvim/config/bundles
+" Lazy.nvim
+source ~/dotfiles/nvim/config/lazy.lua
 
 " Basic settings
 source ~/dotfiles/nvim/config/base

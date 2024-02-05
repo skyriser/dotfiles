@@ -24,8 +24,8 @@ require('lazy').setup({
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-web-devicons', opt = true },
-    event = {'BufNewFile', 'BufRead'},
-    options = { theme = 'gruvbox' },
+    event = { 'BufNewFile', 'BufRead' },
+    options = { theme = 'ayu_mirage' },
     config = 'require("lualine").setup()'
   },
   {

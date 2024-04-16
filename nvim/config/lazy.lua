@@ -34,6 +34,7 @@ require('lazy').setup({
       vim.g.highlightedyank_highlight_duration = 500
     end
   },
+  { 'slim-template/vim-slim' },
   {
     'neoclide/coc.nvim',
     branch = "release",
@@ -46,7 +47,9 @@ require('lazy').setup({
         "coc-yaml",
         "coc-sh",
         "coc-prettier",
-        "coc-pyright"
+        "coc-pyright",
+        "coc-html",
+        "coc-vetur",
       }
     end
   },

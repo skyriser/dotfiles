@@ -49,7 +49,7 @@ require('lazy').setup({
         "coc-prettier",
         "coc-pyright",
         "coc-html",
-        "coc-vetur",
+        "@yaegassy/coc-volar",
       }
     end
   },

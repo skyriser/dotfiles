@@ -23,10 +23,10 @@ $ make
 
 ### NVim plugins
 
-Run first time only
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```
-call dein#install()
+:Lazy
 ```
 
 ### Copilot
@@ -34,7 +34,6 @@ call dein#install()
 - [copilot.vim](https://github.com/github/copilot.vim)
 
 ```
-# on vim
 :Copilot setup
 ```
 

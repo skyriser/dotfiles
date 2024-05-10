@@ -34,9 +34,16 @@ require('lazy').setup({
       vim.g.highlightedyank_highlight_duration = 500
     end
   },
-  { 'slim-template/vim-slim' },
+  {
+    'slim-template/vim-slim'
+  },
+  {
+    'github/copilot.vim',
+    lazy = false
+  },
   {
     'neoclide/coc.nvim',
+    lazy = false,
     branch = "release",
     event = "InsertEnter",
     config = function()
@@ -53,7 +60,4 @@ require('lazy').setup({
       }
     end
   },
-  {
-    'github/copilot.vim'
-  }
 })

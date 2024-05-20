@@ -84,3 +84,4 @@ augroup END
 
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *.jbuilder set ft=ruby

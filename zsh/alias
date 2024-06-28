@@ -17,6 +17,6 @@ alias fig='docker compose'
 alias vi='nvim'
 alias vim='nvim'
 
-# exa
-alias ls='exa'
-alias ll='exa -l'
+# eza
+alias ls='eza'
+alias ll='eza -l'

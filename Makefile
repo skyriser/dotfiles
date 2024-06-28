@@ -6,10 +6,10 @@ help:
 	@echo "make install: deploy & update"
 
 update:
-	git pull origin master
+	git pull origin main
 	git submodule init
 	git submodule update
-	git submodule foreach git pull origin master
+	git submodule foreach git pull origin main
 
 deploy:
 	@/bin/sh deploy.sh

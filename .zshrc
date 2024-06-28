@@ -73,9 +73,6 @@ esac
 # Prompt
 source ~/dotfiles/zsh/prompt
 
-# asdf
-source ~/dotfiles/zsh/asdf
-
 # Starship
 source ~/dotfiles/zsh/starship
 

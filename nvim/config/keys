@@ -16,3 +16,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " Coc / Autocomplete Enterで確定
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" [F8] でGitHubの該当ソースコードを開く
+nmap <F8> :GBrowse<CR>

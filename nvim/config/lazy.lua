@@ -38,6 +38,10 @@ require('lazy').setup({
     'slim-template/vim-slim'
   },
   {
+    'tpope/vim-fugitive',
+    'tpope/vim-rhubarb'
+  },
+  {
     'github/copilot.vim',
     lazy = false
   },

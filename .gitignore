@@ -1,4 +1,5 @@
 .DS_Store
+nvim/pack
 nvim/lazy-lock.json
 *.swp
 .vscode

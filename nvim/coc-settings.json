@@ -1,3 +1,4 @@
 {
-  "tsserver.enable": true
+  "tsserver.enable": true,
+  "vetur.ignoreProjectWarning": true
 }

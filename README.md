@@ -43,7 +43,7 @@ $ make
 
 - [Starship](https://starship.rs/)
 - [asdf](https://asdf-vm.com/)
-- [exa](https://github.com/ogham/exa)
+- [eza](https://github.com/eza-community/eza)
   - `ls`
 - [the_platinum_searcher](https://github.com/monochromegane/the_platinum_searcher)
   - `pt`

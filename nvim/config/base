@@ -35,7 +35,8 @@ set noswapfile
 set nobackup
 
 " カラーテーマ
-set t_Co=256
+" TrueColorは無効化 (for nvim 0.10)
+set notermguicolors
 set background=dark
 colorscheme sonokai
 

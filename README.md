@@ -24,9 +24,16 @@ $ make
 ### NVim plugins
 
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
-
 ```
 :Lazy
+```
+
+- [Watchman](https://facebook.github.io/watchman/)
+  - coc-volar recommended
+
+```
+brew update
+brew install watchman
 ```
 
 ### Copilot

@@ -1,6 +1,5 @@
 {
   "tsserver.enable": true,
-  "vetur.ignoreProjectWarning": true,
   "suggest.enablePreselect": false,
   "suggest.completionItemKindLabels": {
     "function": "\uf794",

@@ -61,6 +61,7 @@ require('lazy').setup({
         "coc-prettier",
         "coc-pyright",
         "coc-html",
+        "coc-solargraph",
         "@yaegassy/coc-volar"
       }
     end

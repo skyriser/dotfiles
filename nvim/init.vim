@@ -1,13 +1,16 @@
 set shell=bash
 
 " Lazy.nvim
-source ~/dotfiles/nvim/config/lazy.lua
+lua require('config.lazy')
 
 " Basic settings
 source ~/dotfiles/nvim/config/base
 
 " Key bind settings
 source ~/dotfiles/nvim/config/keys
+
+" Copilot settings
+lua require('config.copilot')
 
 " Local settings (option)
 if filereadable(expand('~/.vimrc.local'))

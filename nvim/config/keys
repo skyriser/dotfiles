@@ -19,3 +19,9 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " [F8] でGitHubの該当ソースコードを開く
 nmap <F8> :GBrowse<CR>
+
+" [F9] でCopilotChatを開く
+nmap <F9> :CopilotChatToggle<CR>
+
+" リーダーキーをスペースに設定
+let mapleader = "\<Space>"

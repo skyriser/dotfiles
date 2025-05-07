@@ -41,9 +41,15 @@ require('lazy').setup({
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb'
   },
-  {
-    'github/copilot.vim',
-    lazy = false
+    {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "github/copilot.vim" },
+      { "nvim-lua/plenary.nvim", branch = "master" }, -- for curl, log and async functions
+    },
+    build = "make tiktoken",
+    opts = {
+    },
   },
   {
     'neoclide/coc.nvim',

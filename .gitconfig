@@ -2,20 +2,27 @@
   excludesfile = ~/.gitignore
   editor = nvim
   pager = "nkf -w | less -r"
+
 [marge]
   tool = vimdiff
+
 [user]
   name = Shin-ichi Ueda
   email = skyriser@levolution.info
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/i7ALwYW39HagG1F1m76Qbmb1CDuB400uSThZxk4fP
+
 [color]
   branch = auto
   diff = auto
   interactive = auto
   status = auto
+
 [push]
   default = tracking
+
 [merge]
   ff = false
+
 [alias]
   alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
   b = branch -a
@@ -31,10 +38,21 @@
   s = status --short --branch
   st = status
   su = submodule update
-  uchidashi = push
+
 [log]
   date = local
+
 [rerere]
   enabled = true
+
 [pull]
   rebase = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true

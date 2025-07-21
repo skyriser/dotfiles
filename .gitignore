@@ -4,3 +4,7 @@ nvim/lazy-lock.json
 *.swp
 .vscode
 docker-compose.override.yml
+
+# Ignore all for Claude Code instructions
+.claude
+CLAUDE.md

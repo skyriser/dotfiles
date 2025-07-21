@@ -20,3 +20,7 @@ ln -sfnv ~/dotfiles/nvim ~/.config/nvim
 
 # Make local dirs
 mkdir -p $HOME/local/bin $HOME/local/etc $HOME/local/include $HOME/local/lib $HOME/local/src $HOME/local/tmp
+
+# Install Claude global config
+mkdir -p $HOME/.claude
+ln -sfnv "$PWD/CLAUDE.md.global" $HOME/.claude/CLAUDE.md

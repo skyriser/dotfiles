@@ -23,4 +23,5 @@ mkdir -p $HOME/local/bin $HOME/local/etc $HOME/local/include $HOME/local/lib $HO
 
 # Install Claude global config
 mkdir -p $HOME/.claude
-ln -sfnv "$PWD/CLAUDE.md.global" $HOME/.claude/CLAUDE.md
+ln -sfnv "$PWD/claude/CLAUDE.md" $HOME/.claude/CLAUDE.md
+ln -sfnv "$PWD/claude/settings.json" $HOME/.claude/settings.json

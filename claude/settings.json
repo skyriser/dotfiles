@@ -13,8 +13,42 @@
       "Bash(git branch *)"
     ],
     "deny": [
+      "Read(id_rsa)",
+      "Read(id_ed25519)",
+      "Read(.env.*)",
+      "Read(**/*token*)",
+      "Read(**/*key*)",
       "Bash(rm -rf *)",
-      "Bash(sudo *)"
+      "Bash(sudo *)",
+      "Bash(git push *)",
+      "Bash(git commit *)",
+      "Bash(git reset *)",
+      "Bash(git rebase *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(nc *)"
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Funk.aiff"
+          }
+        ]
+      }
     ]
   }
 }

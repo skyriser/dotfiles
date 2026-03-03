@@ -44,6 +44,12 @@ brew install watchman
 :Copilot setup
 ```
 
+## Option
+
+- For Terminal (Mac Standard Apple App)
+  - Settings => Profile => Keyboard)
+  - Check "use Option key for Meta-key"
+
 ## Other
 
 ### Softwares

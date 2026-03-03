@@ -9,7 +9,7 @@
 [user]
   name = Shin-ichi Ueda
   email = skyriser@levolution.info
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/i7ALwYW39HagG1F1m76Qbmb1CDuB400uSThZxk4fP
+	signingkey = ~/.ssh/id_ed25519_signing.pub
 
 [color]
   branch = auto
@@ -50,9 +50,6 @@
 
 [gpg]
   format = ssh
-
-[gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [commit]
   gpgsign = true

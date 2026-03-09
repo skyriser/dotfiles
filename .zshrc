@@ -73,8 +73,5 @@ esac
 # Prompt
 source ~/dotfiles/zsh/prompt
 
-# Starship
-source ~/dotfiles/zsh/starship
-
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

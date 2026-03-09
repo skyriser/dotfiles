@@ -1,5 +1,5 @@
 # PATH
-fish_add_path $HOME/local/bin $HOME/local/sbin $HOME/bin
+fish_add_path $HOME/.local/bin $HOME/local/bin $HOME/local/sbin $HOME/bin
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
 
 # 環境変数

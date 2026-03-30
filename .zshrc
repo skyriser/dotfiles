@@ -75,3 +75,6 @@ source ~/dotfiles/zsh/prompt
 
 # By Local (if exists)
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# Starship
+source ~/dotfiles/zsh/starship

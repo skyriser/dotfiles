@@ -7,6 +7,7 @@ nvim/lazy-lock.json
 docker-compose.override.yml
 compose.override.yml
 
-# Ignore all for Claude Code instructions
+# Ignore all for Claude Code instructions, except this repo's own
 .claude
-GEMINI.md
+CLAUDE.md
+!/claude/CLAUDE.md

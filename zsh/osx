@@ -8,6 +8,7 @@ alias zsh='/usr/local/bin/zsh'
 # Environments
 # Add Homebrew Path to PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export LANG="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"

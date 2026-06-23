@@ -19,7 +19,8 @@
       "Bash(gh issue view *)",
       "Bash(gh repo view *)",
       "Bash(gh release list *)",
-      "Bash(gh release view *)"
+      "Bash(gh release view *)",
+      "Bash(fig *)"
     ],
     "deny": [
       "Read(id_rsa)",
@@ -29,12 +30,6 @@
       "Read(**/*key*)",
       "Bash(rm -rf *)",
       "Bash(sudo *)",
-      "Bash(git push *)",
-      "Bash(git commit *)",
-      "Bash(git reset *)",
-      "Bash(git rebase *)",
-      "Bash(curl *)",
-      "Bash(wget *)",
       "Bash(nc *)"
     ]
   },
@@ -60,5 +55,6 @@
       }
     ]
   },
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": false,
+  "theme": "dark"
 }

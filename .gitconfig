@@ -7,7 +7,7 @@
   tool = vimdiff
 
 [user]
-  name = Shin-ichi Ueda
+  name = Shinichi Ueda
   email = skyriser@levolution.info
   signingkey = ~/.ssh/id_ed25519_signing.pub
 

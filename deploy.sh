@@ -17,7 +17,6 @@ done
 # Install config
 ln -sfnv ~/dotfiles/starship.toml ~/.config/starship.toml
 ln -sfnv ~/dotfiles/nvim ~/.config/nvim
-ln -sfnv ~/dotfiles/fish ~/.config/fish
 
 # Make local dirs
 mkdir -p $HOME/local/bin $HOME/local/etc $HOME/local/include $HOME/local/lib $HOME/local/src $HOME/local/tmp
@@ -26,8 +25,3 @@ mkdir -p $HOME/local/bin $HOME/local/etc $HOME/local/include $HOME/local/lib $HO
 mkdir -p $HOME/.claude
 ln -sfnv "$PWD/claude/CLAUDE.md" $HOME/.claude/CLAUDE.md
 ln -sfnv "$PWD/claude/settings.json" $HOME/.claude/settings.json
-
-# Install Gemini global config
-mkdir -p $HOME/.gemini
-ln -sfnv "$PWD/gemini/GEMINI.md" $HOME/.gemini/GEMINI.md
-ln -sfnv "$PWD/gemini/settings.json" $HOME/.gemini/settings.json

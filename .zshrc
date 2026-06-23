@@ -78,3 +78,6 @@ source ~/dotfiles/zsh/prompt
 
 # Starship
 source ~/dotfiles/zsh/starship
+
+# env
+. "$HOME/.local/bin/env"

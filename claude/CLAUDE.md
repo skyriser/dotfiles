@@ -22,3 +22,8 @@
 ## git push
 
 - Never run `git push` on your own initiative. Only push when the user explicitly asks for it in that turn.
+
+## Shell command execution
+
+- For critical operations (e.g. git, file/directory manipulation such as `rm`, `mv`, `cp`), prefer simple, single-purpose commands over chaining (e.g. `&&`, `;`); run each command separately, and if a pipe (`|`) seems needed, ask the user first instead of constructing it yourself.
+- This does not apply to read-only investigation commands (e.g. `grep`, `find`, `cat`), where chaining and pipes are fine.
